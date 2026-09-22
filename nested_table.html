@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Table</title>
+</head>
+<style>
+    table,
+    tr,
+    td,
+    th {
+        border: 1px solid rgb(218, 35, 96);
+        text-align: center;
+        border-collapse: collapse;
+    }
+    .nested-table{
+        margin: auto;
+    }
+</style>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+               <th colspan="5" style="background-color: rgb(220, 158, 179);">Student Info</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="background-color: rgb(220, 158, 179);">
+                <th rowspan="2">Roll no</th>
+                <th rowspan="2">Name</th>
+                <td colspan="3">Marks</td>
+            </tr>
+            <tr style="background-color: rgb(220, 158, 179);">
+                <td>Maths</td>
+                <td>Science</td>
+                <td>English</td>
+            </tr>
+            <tr>
+                <td>101</td>
+                <td>Aman</td>
+                <td>85</td>
+                <td>78</td>
+                <td>82</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>Ishika</td>
+                <td>92</td>
+                <td>88</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <td colspan="5">
+                    <table class="nested-table">
+                        <thead>
+                            <th colspan="2" style="background-color: rgb(220, 158, 179);">Contact Details</th>
+                        </thead>
+                        <tbody>
+                            <tr style="background-color: rgb(220, 158, 179);">
+                                <td>Email</td>
+                                <td>Phone</td>
+                            </tr>
+                            <tr>
+                                <td>aman@gmail.com</td>
+                                <td>9876543210</td>
+                            </tr>
+                            <tr>
+                                <td>ishika@gmail.com</td>
+                                <td>8765432109</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
